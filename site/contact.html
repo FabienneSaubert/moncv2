@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="fr">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Contact</title>
+  </head>
+  <body>
+    <header>
+      <h1>Contactez-moi</h1>
+    </header>
+    <!-- Formulaire de contact -->
+    <section id="contact">
+      <form method="post" name="contact">
+        <label for="name" id="name">Nom :</label>
+        <input type="text" name="name" required /><br /><br />
+
+        <label for="prenom" id="prenom">Prénom :</label>
+        <input type="text" name="prenom" required /><br /><br />
+
+        <label for="email">Email :</label>
+        <input type="email" id="email" name="email" required /><br /><br />
+
+        <!-- Checkbox competences -->
+        <input type="checkbox" name="competences" id="javascript" required />
+        <label for="javascript">JavaScript</label>
+
+        <input type="checkbox" name="competences" id="PHP" required />
+        <label for="PHP">PHP</label>
+
+        <input type="checkbox" name="competences" id="C#" required />
+        <label for="C#">C#</label>
+
+        <input type="checkbox" name="competences" id="ruby" required />
+        <label for="ruby">Ruby</label>
+
+        <input type="checkbox" name="competences" id="react" required />
+        <label for="react">React</label>
+
+        <input type="checkbox" name="competences" id="nodejs" required />
+        <label for="nodejs">Node.js</label>
+        <br /><br />
+
+        <!-- Select genre -->
+        <label for="genre">Genre:</label>
+        <select name="genre" id="genre" requiered>
+          <option value="femme">Femme</option>
+          <option value="homme">Homme</option>
+          <option value="autre">Je ne suis pas certain</option>
+        </select>
+        <br /><br />
+
+        <!-- Message -->
+        <label for="message">Message :</label><br /><br />
+        <textarea name="message" rows="4" cols="50" required></textarea>
+        <br /><br />
+
+        <!-- Radio poste -->
+        <input type="radio" name="poste" required />
+        <label for="poste">Développeur</label>
+
+        <input type="radio" name="poste" required />
+        <label for="poste">Intégrateur</label>
+
+        <input type="radio" name="poste" required />
+        <label for="poste">Concepteur</label>
+        <br /><br />
+
+        <input type="submit" value="Envoyer" />
+      </form>
+    </section>
+    <br /><br />
+
+    <!-- Footer -->
+    <footer>
+      <a href="index.html">Retour à mon CV</a>
+    </footer>
+  </body>
+</html>
