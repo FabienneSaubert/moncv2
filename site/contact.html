@@ -3,7 +3,7 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Contact</title>
+    <title>Formulaire de contact</title>
   </head>
   <body>
     <header>
@@ -11,7 +11,6 @@
     </header>
 
     <!-- Formulaire de contact -->
-    <section id="contact">
       <form method="post" name="contact">
         <fieldset>
           <label for="name" id="name">Nom :</label>
@@ -33,6 +32,7 @@
 
         <!-- Checkbox competences -->
         <fieldset>
+          <legend>Compétences :</legend>
           <input type="checkbox" name="competences" id="javascript" required />
           <label for="javascript">JavaScript</label>
 
@@ -55,7 +55,7 @@
 
         <!-- Select genre -->
         <fieldset>
-          <label for="genre">Genre:</label>
+          <legend>Genre:</legend>
           <select name="genre" id="genre" requiered>
             <option value="femme">Femme</option>
             <option value="homme">Homme</option>
@@ -66,13 +66,14 @@
 
         <!-- Message -->
         <fieldset>
-          <label for="message">Message :</label><br /><br />
+          <legend>Votre message :</legend>
           <textarea name="message" rows="4" cols="50" required></textarea>
         </fieldset>
         <br />
 
         <!-- Radio poste -->
         <fieldset>
+          <legend>Poste recherché :</legend>
           <input type="radio" name="poste" required />
           <label for="poste">Développeur</label>
 
