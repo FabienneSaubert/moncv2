@@ -1,0 +1,166 @@
+/* Reset de base */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Courier New", Courier, monospace;
+  background-color: #f5f5fe;
+  color: #333;
+  line-height: 1.6;
+  padding: 20px;
+}
+
+/* En-tête */
+header {
+  text-align: center;
+  margin-bottom: 40px;
+  padding-left: 20px;
+  position: relative;
+  min-height: 170px;
+}
+
+#nom {
+  font-size: 3em;
+  color: #333;
+  margin: 10px 0;
+}
+
+#poste {
+  font-size: 1.4em;
+  color: #666;
+  margin-bottom: 20px;
+}
+
+#photo {
+  position: absolute;
+  top: 20px;
+  left: 20px;
+  width: 150px;
+  height: 150px;
+  object-fit: cover;
+  z-index: 10;
+  border-style: solid;
+  border-width: thin;
+  border-color: #e0e0e0;
+}
+
+/* Sections principales */
+main {
+  max-width: 900px;
+  margin: 0 auto;
+  padding: 20px;
+  background-color: #fff;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  border-radius: 8px;
+}
+
+/* Titre des sections */
+h2 {
+  font-size: 2em;
+  color: #4a4a4a;
+  margin-bottom: 20px;
+  border-bottom: 2px solid #e0e0e0;
+  padding-bottom: 5px;
+  margin-top: 15px;
+}
+
+#hcontact {
+  font-size: 2em;
+  color: #4a4a4a;
+  border-bottom: none;
+  font-size: 1.5em;
+  color: #333;
+  padding-left: 10px;
+}
+
+/* À propos de moi */
+#apropos p {
+  font-size: 1.1em;
+  color: #555;
+  margin-bottom: 30px;
+}
+
+/* Liste de compétences */
+.liste-competences {
+  list-style-type: none;
+  padding: 0;
+}
+
+.liste-competences li {
+  background-color: #f0f0f0;
+  color: #333;
+  margin: 5px 0;
+  padding: 10px;
+  border-radius: 4px;
+}
+
+/* Compétences Stage */
+.competences-stage {
+  list-style-type: none;
+  padding: 0;
+}
+
+.competences-stage li {
+  background-color: #f0f0f0;
+  color: #333;
+  margin: 5px 0;
+  padding: 10px;
+  border-radius: 4px;
+}
+
+/* Expérience professionnelle */
+#experiences h3 {
+  font-size: 1.5em;
+  color: #4a4a4a;
+}
+
+#experiences h4 {
+  font-size: 1.2em;
+  color: #777;
+  margin-bottom: 20px;
+}
+
+#experiences p {
+  font-size: 1.1em;
+  color: #555;
+  margin-bottom: 30px;
+}
+
+/* Formation */
+#formation h3 {
+  font-size: 1.5em;
+  color: #4a4a4a;
+}
+
+#formation p {
+  font-size: 1.1em;
+  color: #777;
+}
+
+/* Footer */
+footer {
+  margin-top: 40px;
+  text-align: center;
+  padding: 20px;
+  background-color: #e8e8fb;
+  border-top: 1px solid #e0e0e0;
+}
+
+#pcontact {
+  background-color: #f0f0f0;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+#contact a {
+  font-size: 1.2em;
+  color: #0066cc;
+  text-decoration: none;
+  transition: color 0.3s ease;
+}
+
+#contact a:hover {
+  color: #003366;
+}

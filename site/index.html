@@ -3,26 +3,19 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="/site/style.css" />
     <title>Mon CV</title>
   </head>
+
   <!-- Body  -->
   <body class="body">
+    <!-- En-tête -->
     <header>
-      <!-- En-tête -->
+      <img src="images/photo.jpg" alt="Photo de Fabienne Saubert" id="photo" />
       <h1 id="nom">Fabienne Saubert</h1>
       <h2 id="poste">Développeuse web junior</h2>
-      <img src="images/photo.jpg" alt="Photo de Fabienne Saubert" id="photo" />
-      <!-- Navigation -->
-      <nav class="navigation">
-        <ul>
-          <li><a href="#apropos">À propos</a></li>
-          <li><a href="#competences">Compétences</a></li>
-          <li><a href="#experiences">Expérience professionnelle</a></li>
-          <li><a href="#formation">Formation</a></li>
-          <li><a href="#contact">Contact</a></li>
-        </ul>
-      </nav>
     </header>
+
     <!-- Main    -->
     <main>
       <!-- À propos -->
@@ -38,6 +31,7 @@
           service d'une entreprise.
         </p>
       </section>
+
       <!-- Compétences -->
       <section id="competences">
         <h2>Compétences</h2>
@@ -49,13 +43,21 @@
           <li>Versioning (Git)</li>
         </ul>
       </section>
+
       <!-- Expérience professionnelle -->
       <section id="experiences">
         <h2>Expérience professionnelle</h2>
         <h3>Stage en développement web</h3>
-        <p>Avril 2026 - Juin 2026</p>
+        <h4>Avril 2026 - Juin 2026</h4>
+        <p>
+          Quam ob rem id primum videamus, si placet, quatenus amor in amicitia
+          progredi debeat. Numne, si Coriolanus habuit amicos, ferre contra
+          patriam arma illi cum Coriolano debuerunt? num Vecellinum amici regnum
+          adpetentem, num Maelium debuerunt iuvare?
+        </p>
+
         <!-- Compétences stage -->
-        <ul class="competences Stage">
+        <ul class="competences-stage">
           <li>HTML5</li>
           <li>CSS3</li>
           <li>JavaScript</li>
@@ -63,6 +65,7 @@
           <li>Versioning (Git)</li>
         </ul>
       </section>
+
       <!-- Formation -->
       <section id="formation">
         <h2>Formation</h2>
@@ -70,12 +73,13 @@
         <p>Septembre 2025 - Juin 2026</p>
       </section>
     </main>
+
     <!-- Footer     -->
     <footer>
       <!-- Contact -->
       <section id="contact">
-        <h2>Contact</h2>
-        <a href="contact.html">Contactez-moi !</a>
+        <h2 id="hcontact">Prendre contact :</h2>
+        <p id="pcontact"><a href="contact.html">Formulaire de contact</a></p>
       </section>
     </footer>
   </body>
