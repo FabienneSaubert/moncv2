@@ -1,0 +1,217 @@
+<!DOCTYPE html>
+<html lang="fr">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Formulaire de contact</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+  </head>
+
+  <body class="bg-white text-gray-800 font-sans">
+    <!-- Conteneur principal -->
+    <div
+      class="max-w-3xl mx-auto my-10 p-8 shadow-lg shadow-gray-400 rounded-lg"
+    >
+      <!-- Header -->
+      <header class="text-center mb-10">
+        <h1 class="text-4xl font-bold text-indigo-700 tracking-widest">
+          Contactez-moi
+        </h1>
+        <p class="text-gray-600 mt-2 text-lg">
+          Je vous répondrai dans les plus brefs délais
+        </p>
+      </header>
+
+      <!-- Formulaire -->
+      <form method="post" name="contact" class="space-y-6">
+        <!-- Nom & Prénom -->
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
+          <div>
+            <label for="name" class="block mb-1 font-medium tracking-wide"
+              >Nom :</label
+            >
+            <input
+              type="text"
+              name="name"
+              id="name"
+              required
+              class="w-full p-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-indigo-300"
+            />
+          </div>
+
+          <div>
+            <label for="prenom" class="block mb-1 font-medium tracking-wide"
+              >Prénom :</label
+            >
+            <input
+              type="text"
+              name="prenom"
+              id="prenom"
+              required
+              class="w-full p-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-indigo-300"
+            />
+          </div>
+        </div>
+
+        <!-- Email -->
+        <div>
+          <label for="email" class="block mb-1 font-medium tracking-wide"
+            >Email :</label
+          >
+          <input
+            type="email"
+            id="email"
+            name="email"
+            required
+            class="w-full p-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-indigo-300"
+          />
+        </div>
+
+        <!-- Compétences -->
+        <fieldset class="border border-indigo-200 p-4 rounded-md">
+          <legend class="font-bold text-indigo-700 mb-2">Compétences :</legend>
+          <div class="grid grid-cols-2 md:grid-cols-3 gap-2">
+            <label
+              ><input
+                type="checkbox"
+                name="competences"
+                id="javascript"
+                required
+                class="mr-2"
+              />JavaScript</label
+            >
+            <label
+              ><input
+                type="checkbox"
+                name="competences"
+                id="PHP"
+                required
+                class="mr-2"
+              />PHP</label
+            >
+            <label
+              ><input
+                type="checkbox"
+                name="competences"
+                id="C#"
+                required
+                class="mr-2"
+              />C#</label
+            >
+            <label
+              ><input
+                type="checkbox"
+                name="competences"
+                id="ruby"
+                required
+                class="mr-2"
+              />Ruby</label
+            >
+            <label
+              ><input
+                type="checkbox"
+                name="competences"
+                id="react"
+                required
+                class="mr-2"
+              />React</label
+            >
+            <label
+              ><input
+                type="checkbox"
+                name="competences"
+                id="nodejs"
+                required
+                class="mr-2"
+              />Node.js</label
+            >
+          </div>
+        </fieldset>
+
+        <!-- Genre -->
+        <div>
+          <label for="genre" class="block mb-1 font-medium tracking-wide"
+            >Genre :</label
+          >
+          <select
+            name="genre"
+            id="genre"
+            required
+            class="w-full p-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-indigo-300"
+          >
+            <option value="">-- Sélectionnez --</option>
+            <option value="femme">Femme</option>
+            <option value="homme">Homme</option>
+            <option value="autre">Je ne suis pas certain</option>
+          </select>
+        </div>
+
+        <!-- Message -->
+        <div>
+          <label for="message" class="block mb-1 font-medium tracking-wide"
+            >Votre message :</label
+          >
+          <textarea
+            name="message"
+            id="message"
+            rows="5"
+            required
+            class="w-full p-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-indigo-300"
+          ></textarea>
+        </div>
+
+        <!-- Poste recherché -->
+        <fieldset class="border border-indigo-200 p-4 rounded-md">
+          <legend class="font-bold text-indigo-700 mb-2">
+            Poste recherché :
+          </legend>
+          <div class="space-y-2">
+            <label class="block"
+              ><input
+                type="radio"
+                name="poste"
+                value="developpeur"
+                required
+                class="mr-2"
+              />Développeur</label
+            >
+            <label class="block"
+              ><input
+                type="radio"
+                name="poste"
+                value="integrateur"
+                required
+                class="mr-2"
+              />Intégrateur</label
+            >
+            <label class="block"
+              ><input
+                type="radio"
+                name="poste"
+                value="concepteur"
+                required
+                class="mr-2"
+              />Concepteur</label
+            >
+          </div>
+        </fieldset>
+
+        <!-- Bouton -->
+        <div class="text-center">
+          <input
+            type="submit"
+            value="Envoyer"
+            class="bg-indigo-600 text-white px-6 py-2 rounded-md hover:bg-indigo-700 transition-colors duration-200 cursor-pointer"
+          />
+        </div>
+      </form>
+
+      <!-- Footer -->
+      <footer class="mt-10 text-center border-t pt-4 border-indigo-200">
+        <a href="index.html" class="text-indigo-600 hover:underline"
+          >← Retour à mon CV</a
+        >
+      </footer>
+    </div>
+  </body>
+</html>
