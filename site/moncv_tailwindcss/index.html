@@ -7,57 +7,53 @@
     <title>Mon CV</title>
   </head>
 
-  <body class="m-10 shadow-gray-500 shadow-lg p-10">
+  <body class="m-10 shadow-gray-500 shadow-lg">
     <header
       class="grid grid-cols-1 md:grid-cols-3 gap-4 pt-5 mt-5 leading-9 tracking-widest"
     >
-      <!-- Box for indigo border -->
+      <!-- Indigo border -->
       <div
-        class="col-start-1 col-end-2 -mr-8 h-30 -mt-10 border-r-15 border-indigo-300 opacity-60"
+        class="hidden md:block border-r-20 border-indigo-300 opacity-60 -mr-14 mb-75"
       ></div>
 
-      <!-- Container for name and position -->
-      <div class="col-start-2 content-center -mt-20">
-        <h1 class="font-bold text-4xl text-left tracking-widest leading-12">
+      <!-- Name & title -->
+      <div class="col-start-2 row-start-2 md:text-left ml-5">
+        <h1 class="font-bold text-4xl tracking-widest leading-relaxed -mt-80">
           Fabienne <br />
           SAUBERT
         </h1>
-        <h2 class="text-2xl text-center place-content-center w-100 h-15">
-          Junior Web Developer
-        </h2>
+        <h2 class="text-2xl text-right mt-5">Junior Web Developer</h2>
       </div>
 
-      <!-- Contact details -->
-      <div class="col-start-2 row-start-2 -mt-10 ml-10 pl-5 -mb-8">
-        <ul class="list-none">
+      <!-- Contact -->
+      <div class="col-start-2 row-start-8 md:mt-0 md:ml-5">
+        <ul class="ml-12 -mt-40">
           <li>
-            <b>Mail :</b>
+            <b>Mail:</b>
             <a
               href="mailto:fabienne.saubert@outlook.fr"
-              class="inline-block hover:text-indigo-600 hover:translate-x-1 transition-transform duration-200"
+              class="hover:text-indigo-600"
               >fabienne.saubert@outlook.fr</a
             >
           </li>
-          <li><b>Phone :</b> 06.29.13.81.03</li>
-          <li><b>Address :</b> Route de Pézenas, 34230 Paulhan</li>
+          <li><b>Téléphone:</b> 06.29.13.81.03</li>
+          <li><b>Adresse:</b> Route de Pézenas, 34230 Paulhan</li>
         </ul>
       </div>
-      <!-- Picture and indigo mask -->
-      <div class="relative w-auto h-auto max-w-xs mx-auto">
+
+      <!-- Image -->
+      <div class="col-start-3 max-w-xs mx-auto">
         <img
           src="/site/moncv_tailwindcss/images/PhotoCV.png"
           alt="Photo de Fabienne Saubert"
-          class="w-full h-auto max-w-xs rounded-md"
+          class="max-w-xs rounded-md mt-10"
         />
-        <div
-          class="absolute inset-6 bg-indigo-700 opacity-20 w-68 h-115 -mt-12"
-        ></div>
+        <div class="bg-indigo-700 opacity-20 w-68 h-115 ml-6 -mt-108"></div>
       </div>
     </header>
-    <main
-      class="grid grid-cols-1 md:grid-cols-3 gap-4 pt-5 mt-5 leading-9 tracking-widest"
-    >
-      <div class="border-r-1 -mr-7 -mt-85">
+
+    <main class="grid grid-cols-1 md:grid-cols-3 gap-4 px-4 md:px-10">
+      <div class="border-r-1 -mr-8 -mt-70">
         <!-- Profil -->
 
         <section id="profile" class="leading-9 pb-5 pr-5 pl-5 col-start-1 mr-2">
