@@ -7,227 +7,246 @@
     <title>Mon CV</title>
   </head>
 
-  <body class="m-10 shadow-gray-500 shadow-lg">
-    <header
-      class="grid grid-cols-1 md:grid-cols-3 gap-4 pt-5 mt-5 leading-9 tracking-widest"
-    >
-      <!-- Indigo border -->
-      <div
-        class="hidden md:block border-r-20 border-indigo-300 opacity-60 -mr-14 mb-75"
-      ></div>
+  <body class="m-10 shadow-gray-500 shadow-lg p-10">
+    <div class="container">
+      <header
+        class="grid grid-cols-1 md:grid-cols-3 pt-5 mt-5 leading-9 tracking-widest"
+      >
+        <!-- Indigo bar -->
+        <div
+          class="col-start-1 md:col-start-1 md:col-span-1 border-r-15 border-indigo-300 opacity-60 h-50 -mt-20 -mr-2"
+        ></div>
 
-      <!-- Name & title -->
-      <div class="col-start-2 row-start-2 md:text-left ml-5">
-        <h1 class="font-bold text-4xl tracking-widest leading-relaxed -mt-80">
-          Fabienne <br />
-          SAUBERT
-        </h1>
-        <h2 class="text-2xl text-right mt-5">Junior Web Developer</h2>
-      </div>
-
-      <!-- Contact -->
-      <div class="col-start-2 row-start-8 md:mt-0 md:ml-5">
-        <ul class="ml-12 -mt-40">
-          <li>
-            <b>Mail:</b>
-            <a
-              href="mailto:fabienne.saubert@outlook.fr"
-              class="hover:text-indigo-600"
-              >fabienne.saubert@outlook.fr</a
-            >
-          </li>
-          <li><b>Téléphone:</b> 06.29.13.81.03</li>
-          <li><b>Adresse:</b> Route de Pézenas, 34230 Paulhan</li>
-        </ul>
-      </div>
-
-      <!-- Image -->
-      <div class="col-start-3 max-w-xs mx-auto">
-        <img
-          src="/site/moncv_tailwindcss/images/PhotoCV.png"
-          alt="Photo de Fabienne Saubert"
-          class="max-w-xs rounded-md mt-10"
-        />
-        <div class="bg-indigo-700 opacity-20 w-68 h-115 ml-6 -mt-108"></div>
-      </div>
-    </header>
-
-    <main class="grid grid-cols-1 md:grid-cols-3 gap-4 px-4 md:px-10">
-      <div class="border-r-1 -mr-8 -mt-70">
-        <!-- Profil -->
-
-        <section id="profile" class="leading-9 pb-5 pr-5 pl-5 col-start-1 mr-2">
-          <h2 class="pb-5 text-2xl font-bold tracking-widest ml-1">PROFILE</h2>
-          <p class="text-lg text-justify leading-9 font-medium mt-5">
-            Après plusieurs années à la tête de centres de profits en tant que
-            directrice de magasin, j'ai choisi de me reconvertir vers un métier
-            passion, l’informatique et plus précisément, le développement. Mon
-            expérience dans le commerce m'a permis de développer des compétences
-            solides en analyse, gestion et organisation que je suis prête à
-            mettre à profit dans un environnement digital.
-          </p>
-        </section>
-
-        <!-- Formation -->
-        <section
-          id="formation"
-          class="leading-9 pb-5 pr-5 pl-5 col-start-1 mr-2"
+        <!-- Photo -->
+        <div
+          class="md:col-start-3 md:row-start-1 flex justify-center items-center"
         >
-          <h2 class="pb-5 text-2xl font-bold tracking-widest ml-1 mt-10">
-            FORMATION
-          </h2>
-          <ul class="ml-1 text-lg text-justify font-medium space-y-8 mt-5">
+          <img
+            src="/site/moncv_tailwindcss/images/PhotCV.png"
+            alt="Photo de Fabienne Saubert"
+            class="max-w-full h-auto block rounded-md"
+          />
+        </div>
+
+        <!-- Name and position -->
+        <div class="md:col-start-2 md:row-start-1 text-center md:text-left">
+          <h1
+            class="font-bold text-4xl tracking-widest leading-tight mt-30 -ml-2"
+          >
+            Fabienne <br />
+            SAUBERT
+          </h1>
+          <h2 class="text-2xl mt-15 text-center">Junior Web Developer</h2>
+        </div>
+
+        <!-- Contact details -->
+        <div class="md:col-start-2 md:row-start-2 md:ml-0">
+          <ul class="list-none text-left md:text-left ml-9">
             <li>
-              <b>2025</b> Titre professionnel de Développeur web et web mobile
+              <b>Mail :</b>
+              <a
+                href="mailto:fabienne.saubert@outlook.fr"
+                class="inline-block hover:text-indigo-600 hover:translate-x-1 transition-transform duration-200"
+              >
+                fabienne.saubert@outlook.fr
+              </a>
             </li>
-            <li><b>2019</b> BTS Gestionnaire d’entreprise</li>
-            <li><b>2014</b> DAEU A</li>
-            <li><b>2006</b> BEP Vente</li>
+            <li><b>Téléphone :</b> 06.29.13.81.03</li>
+            <li><b>Adresse :</b> Route de Pézenas, 34230 Paulhan</li>
           </ul>
-        </section>
+        </div>
+      </header>
+      <main
+        class="flex flex-col md:grid md:grid-cols-3 gap-4 pt-5 mt-5 leading-9 tracking-widest"
+      >
+        <div class="md:col-span-1 md:pr-4 border-r-1">
+          <!-- Profil -->
 
-        <!-- Hard skills -->
-        <section class="col-start-1 m-5 mt-10">
-          <h2 class="mt-5 m-5 ml-1 pb-5 text-2xl font-bold tracking-widest">
-            HARD SKILLS
-          </h2>
-          <ul
-            class="text-lg text-justify font-medium space-y-5 mt-5 list-disc ml-5"
+          <section
+            id="profile"
+            class="leading-9 pb-5 pr-5 pl-5 col-start-1 mr-2"
           >
-            <li>HTML5</li>
-            <li>CSS3</li>
-            <li>JavaScript</li>
-            <li>Frameworks front-end (Symfony)</li>
-            <li>Versioning (Git)</li>
-            <li>VS Code</li>
-            <li>Git</li>
-            <li>Tailwind CSS</li>
-          </ul>
-        </section>
+            <h2 class="pb-5 text-2xl font-bold tracking-widest ml-1">
+              PROFILE
+            </h2>
+            <p class="text-lg text-justify leading-9 font-medium mt-5">
+              Après plusieurs années à la tête de centres de profits en tant que
+              directrice de magasin, j'ai choisi de me reconvertir vers un
+              métier passion, l’informatique et plus précisément, le
+              développement. Mon expérience dans le commerce m'a permis de
+              développer des compétences solides en analyse, gestion et
+              organisation que je suis prête à mettre à profit dans un
+              environnement digital.
+            </p>
+          </section>
 
-        <!-- Soft skills -->
-        <section class="col-start-1 m-5 mt-10">
-          <h2 class="mt-15 ml-1 m-5 pb-5 text-2xl font-bold tracking-widest">
-            SOFT SKILLS
-          </h2>
-          <ul
-            class="text-lg text-justify font-medium space-y-5 mt-5 list-disc ml-5"
+          <!-- Formation -->
+          <section
+            id="formation"
+            class="leading-9 pb-5 pr-5 pl-5 col-start-1 mr-2"
           >
-            <li>Curiosité intellectuelle</li>
-            <li>Esprit analytique et structuré</li>
-            <li>Résolution de problèmes</li>
-            <li>Prise d’initiative</li>
-            <li>Capacité à travailler sous pression</li>
-          </ul>
-        </section>
+            <h2 class="pb-5 text-2xl font-bold tracking-widest ml-1 mt-10">
+              FORMATION
+            </h2>
+            <ul class="ml-1 text-lg text-justify font-medium space-y-8 mt-5">
+              <li>
+                <b>2025</b> Titre professionnel de Développeur web et web mobile
+              </li>
+              <li><b>2019</b> BTS Gestionnaire d’entreprise</li>
+              <li><b>2014</b> DAEU A</li>
+              <li><b>2006</b> BEP Vente</li>
+            </ul>
+          </section>
 
-        <!-- SOCIAL MEDIAS -->
-        <section class="col-start-1 m-5 mt-50">
-          <h2
-            class="text-center ml-1 m-5 pb-5 text-2xl font-bold tracking-widest mb-20"
-          >
-            SOCIAL MEDIAS
-          </h2>
-          <div class="flex gap-x-8 justify-center">
-            <a class="hover:rotate-3" href=""
-              ><img
-                src="/site/moncv_tailwindcss/images/LogoGithub.png"
-                class="h-auto w-20"
-            /></a>
-            <a class="hover:rotate-3" href=""
-              ><img
-                src="/site/moncv_tailwindcss/images/linkedin-logo-240x212.png"
-                class="h-auto w-22"
-            /></a>
+          <!-- Hard skills -->
+          <section class="col-start-1 m-5 mt-10">
+            <h2 class="mt-5 m-5 ml-1 pb-5 text-2xl font-bold tracking-widest">
+              HARD SKILLS
+            </h2>
+            <ul
+              class="text-lg text-justify font-medium space-y-5 mt-5 list-disc ml-5"
+            >
+              <li>HTML5</li>
+              <li>CSS3</li>
+              <li>JavaScript</li>
+              <li>Frameworks front-end (Symfony)</li>
+              <li>Versioning (Git)</li>
+              <li>VS Code</li>
+              <li>Git</li>
+              <li>Tailwind CSS</li>
+            </ul>
+          </section>
+
+          <!-- Soft skills -->
+          <section class="col-start-1 m-5 mt-10">
+            <h2 class="mt-15 ml-1 m-5 pb-5 text-2xl font-bold tracking-widest">
+              SOFT SKILLS
+            </h2>
+            <ul
+              class="text-lg text-justify font-medium space-y-5 mt-5 list-disc ml-5"
+            >
+              <li>Curiosité intellectuelle</li>
+              <li>Esprit analytique et structuré</li>
+              <li>Résolution de problèmes</li>
+              <li>Prise d’initiative</li>
+              <li>Capacité à travailler sous pression</li>
+            </ul>
+          </section>
+
+          <!-- SOCIAL MEDIAS -->
+          <section class="col-start-1 m-5 mt-50">
+            <h2
+              class="text-center ml-1 m-5 pb-5 text-2xl font-bold tracking-widest mb-20"
+            >
+              SOCIAL MEDIAS
+            </h2>
+            <div class="flex gap-x-8 justify-center">
+              <a class="hover:rotate-3" href=""
+                ><img
+                  src="/site/moncv_tailwindcss/images/LogoGithub.png"
+                  class="h-auto w-20"
+              /></a>
+              <a class="hover:rotate-3" href=""
+                ><img
+                  src="/site/moncv_tailwindcss/images/linkedin-logo-240x212.png"
+                  class="h-auto w-22"
+              /></a>
+            </div>
+          </section>
+        </div>
+        <!-- DROITE -->
+
+        <!-- Expérience professionnelle -->
+        <div class="md:col-span-2 md:pl-4">
+          <section class="col-start-2 col-span-2">
+            <div class="space-y-7 ml-3 leading-9 text-justify">
+              <h2 class="text-2xl font-bold tracking-widest -mt-1">
+                EXPERIENCE
+              </h2>
+              <h3 class="font-bold text-lg mt-15">
+                DIRECTRICE de magasin | ACTION Paulhan |
+              </h3>
+              <h4>| Mars 2022 - Mars 2024 |</h4>
+              <p class="text-lg">Pilotage du point de vente :</p>
+              <ul
+                class="text-lg text-justify leading-9 font-medium list-disc ml-4 space-y-4"
+              >
+                <li>Planification et organisation des tâches</li>
+                <li>Analyse des KPI</li>
+                <li>Mise en place et suivi de stratégies commerciales</li>
+                <li>Calcul du CA prévisionnel (delta moyen : 1.2%)</li>
+                <li>Calcul et suivi de la productivité</li>
+                <li>
+                  Management de l'équipe encadrante (2 adjoints) ainsi que des
+                  employés polyvalents (18 personnes)
+                </li>
+              </ul>
+              <h3 class="font-bold text-lg mt-20">
+                Directrice de magasin | ACTION Le Bosc |
+              </h3>
+              <h4>| Octobre 2021 - Mars 2022 |</h4>
+              <p class="text-lg">
+                Mission temporaire ayant pour but de rétablir le climat social.
+              </p>
+              <ul
+                class="text-lg text-justify leading-9 font-medium list-disc ml-4 space-y-4"
+              >
+                <li>Pilotage du point de vente</li>
+                <li>Suivi des KPI et révision du prévisionnel</li>
+                <li>
+                  Gestion des ressources humaines (plannings S+4, congés, arrêts
+                  de travail...)
+                </li>
+                <li>
+                  Management de l'équipe encadrante (2 adjoints) et de l'équipe
+                  d'employés polyvalents (20 personnes)
+                </li>
+              </ul>
+              <h3 class="font-bold text-lg mt-20">
+                Directrice de magasin adjointe | ACTION Agde |
+              </h3>
+              <h4>| Septembre 2020 - octobre 2021 |</h4>
+              <p class="text-lg mb-4">
+                Gestion de la commercialité du magasin :
+              </p>
+              <ul
+                class="text-lg text-justify leading-9 font-medium list-disc ml-4 space-y-4"
+              >
+                <li>Rentabilité</li>
+                <li>Saisonnalité</li>
+                <li>Mise en avant</li>
+                <li>Respect des 3 P</li>
+                <p class="-ml-4 mt-10 text-lg">Gestion administrative :</p>
+                <li>Traitement des arrêts maladie</li>
+                <li>Création des plannings quotidien</li>
+                <li>Anticipation des besoins intérimaires</li>
+                <li>Suivi de la productivité</li>
+                <li>
+                  Management d’une équipe de 25 employés polyvalents. Suivi et
+                  contrôle des tâches.
+                </li>
+              </ul>
+            </div>
+          </section>
+        </div>
+      </main>
+
+      <footer>
+        <!-- Contact -->
+        <section
+          id="contact"
+          class="text-center mt-5 border-t-2 border-indigo-300 p-10"
+        >
+          <h2 id="hcontact">Prendre contact :</h2>
+          <div id="pcontact" class="flex flex-col">
+            <a
+              class="hover:text-indigo-600 hover:translate-x-2 transition-transform duration-200"
+              href="contact.html"
+              >Formulaire de contact</a
+            >
           </div>
         </section>
-      </div>
-      <!-- DROITE -->
-
-      <!-- Expérience professionnelle -->
-      <section class="col-start-2 col-span-2 m-5 pr-10">
-        <div class="space-y-7 ml-10 leading-9 text-justify">
-          <h2 class="text-2xl font-bold tracking-widest mt-35">EXPERIENCE</h2>
-          <h3 class="font-bold text-lg mt-15">
-            DIRECTRICE de magasin | ACTION Paulhan |
-          </h3>
-          <h4>| Mars 2022 - Mars 2024 |</h4>
-          <p class="text-lg">Pilotage du point de vente :</p>
-          <ul
-            class="text-lg text-justify leading-9 font-medium list-disc ml-4 space-y-4"
-          >
-            <li>Planification et organisation des tâches</li>
-            <li>Analyse des KPI</li>
-            <li>Mise en place et suivi de stratégies commerciales</li>
-            <li>Calcul du CA prévisionnel (delta moyen : 1.2%)</li>
-            <li>Calcul et suivi de la productivité</li>
-            <li>
-              Management de l'équipe encadrante (2 adjoints) ainsi que des
-              employés polyvalents (18 personnes)
-            </li>
-          </ul>
-          <h3 class="font-bold text-lg mt-20">
-            Directrice de magasin | ACTION Le Bosc |
-          </h3>
-          <h4>| Septembre 2020 - octobre 2021 |</h4>
-          <p class="text-lg">
-            Mission temporaire ayant pour but de rétablir le climat social.
-          </p>
-          <ul
-            class="text-lg text-justify leading-9 font-medium list-disc ml-4 space-y-4"
-          >
-            <li>Pilotage du point de vente</li>
-            <li>Suivi des KPI et révision du prévisionnel</li>
-            <li>
-              Gestion des ressources humaines (plannings S+4, congés, arrêts de
-              travail...)
-            </li>
-            <li>
-              Management de l'équipe encadrante (2 adjoints) et de l'équipe
-              d'employés polyvalents (20 personnes)
-            </li>
-          </ul>
-          <h3 class="font-bold text-lg mt-20">
-            Directrice de magasin adjointe | ACTION Agde |
-          </h3>
-          <h4>| Septembre 2020 - octobre 2021 |</h4>
-          <p class="text-lg mb-4">Gestion de la commercialité du magasin :</p>
-          <ul
-            class="text-lg text-justify leading-9 font-medium list-disc ml-4 space-y-4"
-          >
-            <li>Rentabilité</li>
-            <li>Saisonnalité</li>
-            <li>Mise en avant</li>
-            <li>Respect des 3 P</li>
-            <p class="-ml-4 mt-10 text-lg">Gestion administrative :</p>
-            <li>Traitement des arrêts maladie</li>
-            <li>Création des plannings quotidien</li>
-            <li>Anticipation des besoins intérimaires</li>
-            <li>Suivi de la productivité</li>
-            <li>
-              Management d’une équipe de 25 employés polyvalents. Suivi et
-              contrôle des tâches.
-            </li>
-          </ul>
-        </div>
-      </section>
-    </main>
-
-    <footer>
-      <!-- Contact -->
-      <section
-        id="contact"
-        class="text-center mt-5 border-t-2 border-indigo-300 p-10"
-      >
-        <h2 id="hcontact">Prendre contact :</h2>
-        <div id="pcontact" class="flex flex-col">
-          <a
-            class="hover:text-indigo-600 hover:translate-x-2 transition-transform duration-200"
-            href="contact.html"
-            >Formulaire de contact</a
-          >
-        </div>
-      </section>
-    </footer>
+      </footer>
+    </div>
   </body>
 </html>
